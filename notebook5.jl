@@ -5,7 +5,7 @@ using Markdown
 using InteractiveUtils
 
 # ╔═╡ 53e49c78-8160-40a2-9b11-e9829c6033cf
-using OpticalFibers,Gridap,Plots,GridapGmsh, PlutoUI
+using OpticalFibers,Gridap,Plots,GridapGmsh, PlutoUI,Interpolations
 
 # ╔═╡ 69bed9c2-4561-4800-8725-5d9150498a7e
 using OpticalFibers.ModeSolvers
@@ -134,9 +134,9 @@ md"Nous allons maintenant déterminer le mode de coeur entre 0.925 et 1.115 µm 
 md"On commence par déterminer une valeur approximative de l'indice effectif en prenant une valeur située à mi-chemin entre le bord inférieure et le bord supérieur de la BIP"
 
 # ╔═╡ 731a8d6f-4d36-4b02-933d-3a5b058dc53e
+# ╠═╡ disabled = true
 #=╠═╡
 begin
-	using Interpolations
 	neff_approx2=(max.(neff[5:18,2,7],neff[5:18,1,7])+min.(neff[5:18,2,6],1.45))/2
 	interp=LinearInterpolation(vlambda[5:18],neff_approx2)
 end;

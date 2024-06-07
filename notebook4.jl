@@ -174,7 +174,7 @@ Valeur de $\gamma$ donnée par les éléments finis : $(2*imag(ms2D_bent[1].neff
 """
 
 # ╔═╡ c05036a6-e539-4646-be07-6831949e02a8
-md"Pour effectuer le calcul de mode vectoriel, on peut utiliser le même profil d'indice ou utiliser l'optique de transfomation et utiliser une permittivité et une perméabilité tensorielle"
+md"Pour effectuer le calcul de mode vectoriel, on peut utiliser le même profil d'indice ou utiliser l'optique de transformation avec une permittivité et une perméabilité tensorielle"
 
 # ╔═╡ e8a29827-cda2-43ad-9b52-7bb2f82d86ee
 # ╠═╡ disabled = true
